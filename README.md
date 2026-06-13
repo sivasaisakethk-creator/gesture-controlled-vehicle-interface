@@ -1,24 +1,90 @@
+# Gesture-Controlled Vehicle Interface
 
-> Open this page at [https://sivasaisakethk-creator.github.io/gesture-controlled-vehicle-interface/](https://sivasaisakethk-creator.github.io/gesture-controlled-vehicle-interface/)
+## Overview
 
-## Use as Extension
+This project is a gesture-based vehicle control system built using a Microsoft Micro:bit and its onboard 3-axis accelerometer.
 
-This repository can be added as an **extension** in MakeCode.
+The controller interprets hand movements and converts them into directional navigation commands that can be used to operate a robotic vehicle.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/sivasaisakethk-creator/gesture-controlled-vehicle-interface** and import
+The project was developed as a standalone control interface and serves as a foundation for future wireless robotic vehicle integration.
 
-## Edit this project
+---
 
-To edit this repository in MakeCode.
+## Features
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **Import** then click on **Import URL**
-* paste **https://github.com/sivasaisakethk-creator/gesture-controlled-vehicle-interface** and click import
+* 8-direction gesture recognition
+* Forward, backward, left and right navigation
+* Diagonal movement support
+* Variable speed control (3 speed levels)
+* Normal mode and Sport mode
+* Emergency stop functionality
+* Real-time accelerometer sensing
+* Serial telemetry output
 
-#### Metadata (used for search, rendering)
+---
 
-* for PXT/microbit
-<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+## Hardware
+
+* Microsoft Micro:bit V2
+* Built-in Accelerometer
+* USB Interface
+
+---
+
+## Control Scheme
+
+| Gesture             | Action              |
+| ------------------- | ------------------- |
+| Tilt Forward        | Move Forward        |
+| Tilt Backward       | Move Backward       |
+| Tilt Left           | Turn Left           |
+| Tilt Right          | Turn Right          |
+| Tilt Forward Left   | Move Forward Left   |
+| Tilt Forward Right  | Move Forward Right  |
+| Tilt Backward Left  | Move Backward Left  |
+| Tilt Backward Right | Move Backward Right |
+
+### Buttons
+
+| Input | Function                   |
+| ----- | -------------------------- |
+| A     | Toggle Normal / Sport Mode |
+| A + B | Emergency Stop             |
+
+---
+
+## Speed Levels
+
+The controller supports three speed levels based on tilt intensity:
+
+* Speed 1 (Low)
+* Speed 2 (Medium)
+* Speed 3 (High)
+
+---
+
+## Future Improvements
+
+* Wireless communication
+* Bluetooth connectivity
+* ESP32 vehicle integration
+* Autonomous navigation modes
+* Telemetry dashboard
+
+---
+
+## Skills Demonstrated
+
+* Embedded Systems
+* Accelerometer Integration
+* Human-Machine Interfaces
+* Gesture Recognition
+* Signal Processing
+* Rapid Prototyping
+
+---
+
+## Demonstration
+
+See the demo video for a complete showcase of the controller and its functionality.
+
